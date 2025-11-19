@@ -7,15 +7,6 @@ import java.util.Scanner;
 
 public class QuestionSix {
     public static void main(String[] args) {
-        System.out.println("Available Network Interfaces:");
-        try {
-            for (NetworkInterface ni : Collections.list(NetworkInterface.getNetworkInterfaces())) {
-                System.out.println(" - " + ni.getName() + " (" + ni.getDisplayName() + ")");
-            }
-        } catch (SocketException e) {
-            System.out.println("Error listing interfaces: " + e.getMessage());
-        }
-        System.out.println();
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter interface name or MAC address : ");

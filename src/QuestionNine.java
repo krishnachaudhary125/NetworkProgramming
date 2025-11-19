@@ -1,4 +1,4 @@
-//Write a program to illustrate factory and getter method
+//Write a program to illustrate factory and getter method of network interface class
 
 import java.net.NetworkInterface;
 import java.net.SocketException;

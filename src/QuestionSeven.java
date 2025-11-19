@@ -1,26 +1,24 @@
-//Write a program to retrieve IP address providing Interface address or MAC address
+//Write a program to find MAC Address of the system
 
-import java.net.*;
-import java.util.*;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
 
 public class QuestionSeven {
-    public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        try {
+            InetAddress ip = InetAddress.getLocalHost();
+            NetworkInterface network = NetworkInterface.getByInetAddress(ip);
 
-        System.out.print("Enter Interface Name: ");
-        String name = sc.nextLine();
+            byte[] mac = network.getHardwareAddress();
 
-        NetworkInterface ni = NetworkInterface.getByName(name);
-
-        if (ni == null) {
-            System.out.println("Interface not found!");
-            return;
-        }
-
-        for (InetAddress ip : Collections.list(ni.getInetAddresses())) {
-            if (!ip.isLoopbackAddress()) {
-                System.out.println("IP Address: " + ip.getHostAddress());
+            System.out.print("MAC Address: ");
+            for (int i = 0; i < mac.length; i++) {
+                System.out.format("%02X%s", mac[i], (i < mac.length - 1) ? "-" : "");
             }
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
+

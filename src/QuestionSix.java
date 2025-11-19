@@ -1,4 +1,4 @@
-//Write a program to find MAC Address of the system
+//Write a program to retrieve IP address providing Interface address or MAC address
 
 import java.net.*;
 import java.util.Collections;

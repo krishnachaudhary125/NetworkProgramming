@@ -69,5 +69,4 @@ public class QuestionSix {
         }
         return sb.toString();
     }
-
 }

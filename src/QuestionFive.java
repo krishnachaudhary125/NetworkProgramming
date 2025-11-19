@@ -4,34 +4,25 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 public class QuestionFive {
+
     public static void main(String[] args) {
-        String inputIP = "192.168.1.10";
-
         try {
-            InetAddress ip = InetAddress.getByName(inputIP);
+            String ipAddress = "192.168.1.10";
+            InetAddress address = InetAddress.getByName(ipAddress);
 
-            System.out.println("IP Address: " + inputIP);
-            if (ip.getHostAddress().contains(":")) {
-                System.out.println("Type: IPv6 Address");
-            } else {
-                System.out.println("Type: IPv4 Address");
-            }
+            System.out.println("IP Address: " + address.getHostAddress());
 
-            System.out.println("Is Loopback Address? " + ip.isLoopbackAddress());
-            System.out.println("Is Multicast Address? " + ip.isMulticastAddress());
-            System.out.println("Is Any Local Address? " + ip.isAnyLocalAddress());
-            System.out.println("Is Link Local Address? " + ip.isLinkLocalAddress());
-            System.out.println("Is Site Local Address? " + ip.isSiteLocalAddress());
-            System.out.println("Is Unicast Address? " + isUnicast(ip));
+            System.out.println("Is Loopback Address? " + address.isLoopbackAddress());
+            System.out.println("Is Multicast Address? " + address.isMulticastAddress());
+            System.out.println("Is Any Local Address? " + address.isAnyLocalAddress());
+            System.out.println("Is Link Local Address? " + address.isLinkLocalAddress());
+            System.out.println("Is Site Local Address? " + address.isSiteLocalAddress());
+            boolean isUnicast = !address.isMulticastAddress() && !address.isLoopbackAddress() && !address.isAnyLocalAddress();
+            System.out.println("Is Unicast Address? " + isUnicast);
 
         } catch (UnknownHostException e) {
-            System.out.println("Invalid IP Address!");
+            System.out.println("Invalid IP address.");
+            e.printStackTrace();
         }
-    }
-
-    public static boolean isUnicast(InetAddress ip) {
-        return !ip.isAnyLocalAddress() &&
-                !ip.isMulticastAddress() &&
-                !ip.isLoopbackAddress();
     }
 }

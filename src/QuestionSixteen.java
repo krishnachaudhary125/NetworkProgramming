@@ -7,10 +7,10 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sixteen extends ProxySelector {
+public class QuestionSixteen extends ProxySelector {
     private List<Proxy> proxies = new ArrayList<>();
 
-    public Sixteen(){
+    public QuestionSixteen(){
         proxies.add(new Proxy(Proxy.Type.HTTP, new InetSocketAddress("proxy1.example.com", 8080)));
     }
 
@@ -23,7 +23,7 @@ public class Sixteen extends ProxySelector {
         System.out.println("Connection failed to "+uri);
     }
     public static void main(String[] args) {
-        ProxySelector.setDefault(new Sixteen());
+        ProxySelector.setDefault(new QuestionSixteen());
         System.out.println("Custom Proxy Selector is set.");
     }
 }

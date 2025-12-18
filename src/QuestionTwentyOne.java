@@ -1,3 +1,5 @@
+//Write a program to download a web page with the correct character set.
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

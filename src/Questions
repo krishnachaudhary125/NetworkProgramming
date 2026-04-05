@@ -21,7 +21,7 @@
 21.	Write a program to download a web page with the correct character set.
 22.	Write a program to print the entire HTTP header.
 23.	Write a program to configure URLConnection.
-24.	Write a to download webpage using URLConnection.
+24.	Write a program to download webpage using URLConnection.
 25.	Write a program to get information about the TCP socket.
 26.	Write a program to create TCP echo server and client.
 27.	Write a program to create a TCP daytime client and server.

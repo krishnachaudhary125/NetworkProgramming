@@ -1,3 +1,4 @@
+//Illustrate the procedure of creating secure client and server socket.
 import javax.net.ssl.SSLServerSocket;
 import javax.net.ssl.SSLServerSocketFactory;
 import javax.net.ssl.SSLSocket;
@@ -7,7 +8,6 @@ import java.io.PrintWriter;
 
 public class QuestionThirtyFiveServer {
     public static void main(String[] args) throws Exception {
-        // Set keystore: -Djavax.net.ssl.keyStore=keystore.jks -Djavax.net.ssl.keyStorePassword=password
         SSLServerSocketFactory factory = (SSLServerSocketFactory) SSLServerSocketFactory.getDefault();
         SSLServerSocket ss = (SSLServerSocket) factory.createServerSocket(9443);
         System.out.println("SSL Server started on port 9443...");

@@ -1,3 +1,5 @@
+//Illustrate the process for communicating with Multicast group.
+
 import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;

@@ -1,3 +1,4 @@
+//Write a program to create a Multi-threaded TCP server and client to check the prime number.
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;

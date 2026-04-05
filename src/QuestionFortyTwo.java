@@ -1,3 +1,4 @@
+//Write a program to set the UDP socket options.
 import java.net.DatagramSocket;
 
 public class QuestionFortyTwo {
@@ -9,7 +10,7 @@ public class QuestionFortyTwo {
         socket.setBroadcast(true);
         System.out.println("Timeout       : " + socket.getSoTimeout());
         System.out.println("Send Buffer   : " + socket.getSendBufferSize());
-        System.out.println("Recv Buffer   : " + socket.getReceiveBufferSize());
+        System.out.println("Receive Buffer   : " + socket.getReceiveBufferSize());
         System.out.println("Broadcast     : " + socket.getBroadcast());
         socket.close();
     }

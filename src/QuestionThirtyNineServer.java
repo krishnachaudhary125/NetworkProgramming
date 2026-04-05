@@ -1,3 +1,4 @@
+//	Write a program to create a UDP daytime client and server.
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.util.Date;

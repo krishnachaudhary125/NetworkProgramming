@@ -1,3 +1,4 @@
+//Write a program to set the TCP server socket options.
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 
@@ -9,7 +10,7 @@ public class QuestionThirtyThree {
         ss.setSoTimeout(10000);
         ss.bind(new InetSocketAddress(4500));
         System.out.println("ReuseAddress  : " + ss.getReuseAddress());
-        System.out.println("Recv Buffer   : " + ss.getReceiveBufferSize());
+        System.out.println("Receive Buffer   : " + ss.getReceiveBufferSize());
         System.out.println("Timeout       : " + ss.getSoTimeout());
         ss.close();
     }

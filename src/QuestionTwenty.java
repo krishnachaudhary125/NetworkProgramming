@@ -12,7 +12,7 @@ public class QuestionTwenty {
             con.setRequestMethod("GET");
             con.connect();
 
-            System.out.println("HTTP Header Information:\n");
+            System.out.println("HTTP Header Information:");
 
             for (int i = 0; ; i++) {
                 String headerKey = con.getHeaderFieldKey(i);

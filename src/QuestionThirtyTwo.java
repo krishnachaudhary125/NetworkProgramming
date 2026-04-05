@@ -1,3 +1,4 @@
+//Write a program to set the TCP client socket options.
 import java.net.Socket;
 
 public class QuestionThirtyTwo {
@@ -11,7 +12,7 @@ public class QuestionThirtyTwo {
         socket.setSoLinger(true, 10);
         System.out.println("Timeout       : " + socket.getSoTimeout());
         System.out.println("Send Buffer   : " + socket.getSendBufferSize());
-        System.out.println("Recv Buffer   : " + socket.getReceiveBufferSize());
+        System.out.println("Receive Buffer   : " + socket.getReceiveBufferSize());
         System.out.println("KeepAlive     : " + socket.getKeepAlive());
         System.out.println("TcpNoDelay    : " + socket.getTcpNoDelay());
         socket.close();

@@ -1,3 +1,4 @@
+//	Write a program to create a TCP client and server to share text messages.
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;

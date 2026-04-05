@@ -1,3 +1,4 @@
+//	Write a program to create a UDP client and server to check given number is Armstrong or not.
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 

@@ -1,3 +1,4 @@
+//	Write a program to create a UDP client and server to share text messages.
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;

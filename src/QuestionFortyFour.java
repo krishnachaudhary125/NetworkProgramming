@@ -1,3 +1,4 @@
+//	Write a program for multicast sniffer.
 import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;

@@ -32,3 +32,14 @@
 32.	Write a program to set the TCP client socket options.
 33.	Write a program to set the TCP server socket options.
 34.	Write a program to create http file server.
+35.	Illustrate the procedure of creating secure client and server socket.
+36.	Write a program to get information about the UDP socket.
+37.	Write a program to create a TCP client and server to share text messages using NIO.
+38.	Write a program to create UDP echo server and client.
+39.	Write a program to create a UDP daytime client and server.
+40.	Write a program to create a UDP client and server to share text messages.
+41.	Write a program to create a UDP client and server to check given number is Armstrong or not.
+42.	Write a program to set the UDP socket options.
+43.	Illustrate the process for communicating with Multicast group.
+44.	Write a program for multicast sniffer.
+45.	Write a program to calculate GCD using RMI.
